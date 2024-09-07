@@ -13,22 +13,22 @@ async function fetchGithubRepos() {
 
 const projectData = {
     'LojaVeiculos': {
-        image: '/assets/Motorcode.png',
+        image: '/PortifolioV2/assets/Motorcode.png',
         description: 'Esse é um projeto criado no Senai no último semestre com base em Bootstrap, HTML, CSS e PHP.',
         languages: ['Bootstrap', 'HTML', 'CSS', 'PHP']
     },
     'Fokus_alura': {
-        image: '/assets/Fokus-alura.png',
+        image: '/PortifolioV2//assets/Fokus-alura.png',
         description: 'Esse projeto foi desenvolvido na Alura para otimizar o tempo. Foi usado HTML, CSS e JS.',
         languages: ['JavaScript', 'HTML', 'CSS']
     },
     '-o-que-aprendi-no-senai-em-java': {
-        image: '/assets/3.jpg',
+        image: '/PortifolioV2//assets/3.jpg',
         description: 'Essa foi minha trajetória aprendendo Java e MySQL.',
         languages: ['Java', 'MySQL']
     },
     'o-que-aprendi-no-senai-em-site': {
-        image: '/assets/3.jpg',
+        image: '/PortifolioV2//assets/3.jpg',
         description: 'Essa foi minha trajetória aprendendo JavaScript, MySQL, PHP, CSS, HTML.',
         languages: ['JavaScript', 'MySQL', 'PHP', 'CSS', 'HTML']
     },
