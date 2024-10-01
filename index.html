@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MZ</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
+
+
 <body>
 
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
@@ -16,247 +20,281 @@
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">MZ</span>
             </a>
-        
+
             <div class="flex md:order-2 space-x-4 md:space-x-0 rtl:space-x-reverse"> <!-- Ajuste aqui -->
-                <button id="scrollToContact" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contato</button>
+                <button id="scrollToContact" type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contato</button>
                 <button id="theme-toggle" class="bg-blue-500 text-white p-2 rounded-lg">Modo escuro</button>
-                <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-cta" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="#home" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500" aria-current="page">Home</a>
+                        <a href="#home"
+                            class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                            aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#about" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre</a>
+                        <a href="#about"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre</a>
                     </li>
                     <li>
-                        <a href="#timeline" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Meus Cursos</a>
+                        <a href="#timeline"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Meus
+                            Cursos</a>
                     </li>
                     <li>
-                        <a href="#services" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Serviços</a>
+                        <a href="#services"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Serviços</a>
                     </li>
                     <li>
-                        <a href="#skills" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+                        <a href="#skills"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
                     </li>
                     <li>
-                        <a href="#portifolio" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Portifolio</a>
+                        <a href="#portifolio"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Portifolio</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-  <!-- Section -->
-  <section class="flex justify-center items-center p-10 bg-[#191f36] text-black custom-margin-top" id="home">
-    <div class="flex flex-col items-center text-center md:text-left md:flex-row">
-        <div class="home-content mb-8 md:mb-0 md:mr-8">
-            <h3 class="text-3xl font-bold">Hello World</h3>
-            <h1 class="text-5xl font-bold leading-tight mt-4">Mateus Zdebski</h1>
-            <h3 class="text-3xl font-bold mt-4 mb-6">Sou formado em <span class="text-[#59B2F4]">Desenvolvedor de sistemas</span></h3>
-            <p class="text-lg mb-6">Não é a linguagem de programação que define o programador, mas sim sua lógica.</p>
-            <div class="flex space-x-4 mb-6 justify-center" >
-                <a href="https://www.facebook.com/profile.php?id=100077031248220" class="icon-button w-10 h-10 flex justify-center items-center border-2 border-[#59B2F4] rounded-full text-[#59B2F4] hover:bg-[#59B2F4] hover:text-[#262B40] transition-transform transform hover:scale-110 shadow-md">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/mateuszdebski02/" class="icon-button w-10 h-10 flex justify-center items-center border-2 border-[#59B2F4] rounded-full text-[#59B2F4] hover:bg-[#59B2F4] hover:text-[#262B40] transition-transform transform hover:scale-110 shadow-md">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mateus-zdebski-623335288/" class="icon-button w-10 h-10 flex justify-center items-center border-2 border-[#59B2F4] rounded-full text-[#59B2F4] hover:bg-[#59B2F4] hover:text-[#262B40] transition-transform transform hover:scale-110 shadow-md">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/mago123456677" class="icon-button w-10 h-10 flex justify-center items-center border-2 border-[#59B2F4] rounded-full text-[#59B2F4] hover:bg-[#59B2F4] hover:text-[#262B40] transition-transform transform hover:scale-110 shadow-md">
-                    <i id="ivones" class="fab fa-github"></i>
-                </a>
+
+    <!-- Section -->
+    <section class="flex justify-center items-center p-10 bg-[#191f36] text-black custom-margin-top" id="home">
+        <div class="flex flex-col items-center text-center md:text-left md:flex-row">
+            <div class="home-content mb-8 md:mb-0 md:mr-8">
+                <h3 class="text-3xl font-bold">Hello World</h3>
+                <h1 class="text-5xl font-bold leading-tight mt-4">Mateus Zdebski</h1>
+                <h3 class="text-3xl font-bold mt-4 mb-6">Sou formado em <span class="text-[#59B2F4]">Desenvolvedor de
+                        sistemas</span></h3>
+                <p class="text-lg mb-6">Não é a linguagem de programação que define o programador, mas sim sua lógica.
+                </p>
+                <div class="flex space-x-4 mb-6 justify-center">
+                    <a href="https://www.facebook.com/profile.php?id=100077031248220"
+                        class="icon-button w-10 h-10 flex justify-center items-center border-2 border-[#59B2F4] rounded-full text-[#59B2F4] hover:bg-[#59B2F4] hover:text-[#262B40] transition-transform transform hover:scale-110 shadow-md">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mateuszdebski02/"
+                        class="icon-button w-10 h-10 flex justify-center items-center border-2 border-[#59B2F4] rounded-full text-[#59B2F4] hover:bg-[#59B2F4] hover:text-[#262B40] transition-transform transform hover:scale-110 shadow-md">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mateus-zdebski-623335288/"
+                        class="icon-button w-10 h-10 flex justify-center items-center border-2 border-[#59B2F4] rounded-full text-[#59B2F4] hover:bg-[#59B2F4] hover:text-[#262B40] transition-transform transform hover:scale-110 shadow-md">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/mago123456677"
+                        class="icon-button w-10 h-10 flex justify-center items-center border-2 border-[#59B2F4] rounded-full text-[#59B2F4] hover:bg-[#59B2F4] hover:text-[#262B40] transition-transform transform hover:scale-110 shadow-md">
+                        <i id="ivones" class="fab fa-github"></i>
+                    </a>
+                </div>
+                <a href="/assets/Mateus Zdebski.pdf"
+                    class="inline-block py-2 px-8 bg-[#59B2F4] text-[#191f36] rounded-full shadow-md hover:shadow-none hover:scale-105 transform transition-transform text-lg font-semibold">Download
+                    CV</a>
             </div>
-            <a href="/assets/Mateus Zdebski.pdf" class="inline-block py-2 px-8 bg-[#59B2F4] text-[#191f36] rounded-full shadow-md hover:shadow-none hover:scale-105 transform transition-transform text-lg font-semibold">Download CV</a>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Sobre Section -->
-<section class="flex justify-center items-center gap-8 mt-10 py-10  dark:bg-gray-00" id="about">
-    <div class="w-65 custom-margin-about">
-        <img src="assets/107801764-removebg-preview.png" alt="" class="w-full">
-    </div>
-    <div class="w-2/3 custom-margin-about">
-        <h2 class="text-3xl font-bold leading-tight text-gray-800 dark:text-gray-100">
-            Sobre<span class="text-blue-500 dark:text-blue-300"> Eu</span>
+    <!-- Sobre Section -->
+    <section class="flex justify-center items-center gap-8 mt-10 py-10  dark:bg-gray-00" id="about">
+        <div class="w-65 custom-margin-about">
+            <img src="assets/107801764-removebg-preview.png" alt="" class="w-full">
+        </div>
+        <div class="w-2/3 custom-margin-about">
+            <h2 class="text-3xl font-bold leading-tight text-gray-800 dark:text-gray-100">
+                Sobre<span class="text-blue-500 dark:text-blue-300"> Eu</span>
+            </h2>
+            <p class="text-lg mt-4 text-gray-600 dark:text-gray-300">
+                Sou Mateus Zdebski formado em técnico desenvolvimento de sistemas no Senai sul Joinville, SC.
+            </p>
+            <p class="text-lg text-gray-600 dark:text-gray-300">
+                Apesar de ainda não ter experiência profissional formal, me considero um profissional dedicado e
+                proativo,
+            </p>
+            <p class="text-lg mb-8 text-gray-600 dark:text-gray-300">
+                sempre buscando aprender e me desenvolver mais.
+            </p>
+            <a href="#contact"
+                class="inline-block px-6 py-3 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors duration-300 dark:bg-blue-700 dark:hover:bg-blue-800">
+                Contato
+            </a>
+        </div>
+    </section>
+
+    <section class="py-10" id="timeline">
+        <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-10">
+            Meus<span class="text-blue-500 dark:text-blue-300"> Cursos</span>
         </h2>
-        <p class="text-lg mt-4 text-gray-600 dark:text-gray-300">
-            Sou Mateus Zdebski formado em técnico desenvolvimento de sistemas no Senai sul Joinville, SC.
-        </p>
-        <p class="text-lg text-gray-600 dark:text-gray-300">
-            Apesar de ainda não ter experiência profissional formal, me considero um profissional dedicado e proativo,
-        </p>
-        <p class="text-lg mb-8 text-gray-600 dark:text-gray-300">
-            sempre buscando aprender e me desenvolver mais.
-        </p>
-        <a href="#contact" class="inline-block px-6 py-3 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors duration-300 dark:bg-blue-700 dark:hover:bg-blue-800">
-            Contato
-        </a>
-    </div>
-</section>
+        <div class="container mx-auto">
+            <ol class="relative border-l border-gray-200 dark:border-gray-700">
+                    <li class="mb-10 lg:ml-6 ml-4">
+                    <span class="flex absolute -left-3 justify-center items-center w-8 h-8 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        <i class="fas fa-graduation-cap text-blue-500" aria-label="Graduation"></i>
+                    </span>
+                    <div class="group block p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-500">Curso de Eletroeletrônica</h3>
+                        <time class="text-sm text-gray-500 dark:text-gray-400">IFSC - 2024</time>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Iniciei curso técnico que abordou fundamentos de eletrica e arduino.</p>
+                    </div>
+                </li>
+                <!-- Item 1 -->
+                <li class="mb-10 lg:ml-6 ml-4">
+                    <span class="flex absolute -left-3 justify-center items-center w-8 h-8 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        <i class="fas fa-graduation-cap text-blue-500" aria-label="Graduation"></i>
+                    </span>
+                    <div class="group block p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-500">Curso de Desenvolvimento de Sistemas</h3>
+                        <time class="text-sm text-gray-500 dark:text-gray-400">Senai - 2023</time>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Curso técnico que abordou fundamentos de programação, desenvolvimento web e banco de dados MySQL.</p>
+                    </div>
+                </li>
+                <!-- Item 2 -->
+                <li class="mb-10 lg:ml-6 ml-4">
+                    <span class="flex absolute -left-3 justify-center items-center w-8 h-8 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        <i class="fas fa-laptop-code text-blue-500" aria-label="Coding"></i>
+                    </span>
+                    <div class="group block p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-500">Ensino Médio</h3>
+                        <time class="text-sm text-gray-500 dark:text-gray-400">Colégio Estadual Prof Juracy Maria Brosig - 2023</time>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Concluí o ensino médio.</p>
+                    </div>
+                </li>
+                <!-- Item 3 -->
+                <li class="mb-10 lg:ml-6 ml-4">
+                    <span class="flex absolute -left-3 justify-center items-center w-8 h-8 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        <i class="fas fa-school text-blue-500" aria-label="School"></i>
+                    </span>
+                    <div class="group block p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-500">Ensino Fundamental</h3>
+                        <time class="text-sm text-gray-500 dark:text-gray-400">ESCOLA MUNICIPAL PROF ADA SANTANNA DA SILVEIRA - 2020</time>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Concluí o ensino fundamental.</p>
+                    </div>
+                </li>
+                <!-- Item 4 -->
+                <li class="lg:ml-6 ml-4">
+                    <span class="flex absolute -left-3 justify-center items-center w-8 h-8 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        <i class="fas fa-file-alt text-blue-500" aria-label="Certificate"></i>
+                    </span>
+                    <div class="group block p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-500">Office 2016 e Administração</h3>
+                        <time class="text-sm text-gray-500 dark:text-gray-400">Jumper Cursos - 2016</time>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Concluí curso básico de administração e ferramentas do Office 2016.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
 
-<!-- Seção Linha do Tempo -->
-<section class="py-10" id="timeline">
-    <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-10" style="margin-top: 10%;">
-        Meus<span class="text-blue-500 dark:text-blue-300"> Cursos</span>
-    </h2>
-    <div class="container mx-auto">
-        <ol class="relative border-l border-gray-200 dark:border-gray-700">
-            <!-- Item 1 -->
-            <li class="mb-10 ml-6">
-                <span class="flex absolute -left-3 justify-center items-center w-8 h-8 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                    <i class="fas fa-graduation-cap text-blue-500" aria-label="Graduation"></i>
-                </span>
-                <div class="group block p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-500">Curso de Desenvolvimento de Sistemas</h3>
-                    <time class="text-sm text-gray-500 dark:text-gray-400">Senai - 2023</time>
-                    <p class="mt-2 text-gray-600 dark:text-gray-300">Curso técnico que abordou fundamentos de programação, desenvolvimento web e banco de dados MySQL.</p>
-                </div>
-            </li>
-            <!-- Item 2 -->
-            <li class="mb-10 ml-6">
-                <span class="flex absolute -left-3 justify-center items-center w-8 h-8 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                    <i class="fas fa-laptop-code text-blue-500" aria-label="Coding"></i>
-                </span>
-                <div class="group block p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-500">Ensino Médio</h3>
-                    <time class="text-sm text-gray-500 dark:text-gray-400">Colégio Estadual Prof Juracy Maria Brosig - 2023</time>
-                    <p class="mt-2 text-gray-600 dark:text-gray-300">Concluí o ensino médio.</p>
-                </div>
-            </li>
-            <!-- Item 3 -->
-            <li class="mb-10 ml-6">
-                <span class="flex absolute -left-3 justify-center items-center w-8 h-8 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                    <i class="fas fa-school text-blue-500" aria-label="School"></i>
-                </span>
-                <div class="group block p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-500">Ensino Fundamental</h3>
-                    <time class="text-sm text-gray-500 dark:text-gray-400">ESCOLA MUNICIPAL PROF ADA SANTANNA DA SILVEIRA - 2020</time>
-                    <p class="mt-2 text-gray-600 dark:text-gray-300">Concluí o ensino fundamental.</p>
-                </div>
-            </li>
-            <!-- Item 4 -->
-            <li class="ml-6">
-                <span class="flex absolute -left-3 justify-center items-center w-8 h-8 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                    <i class="fas fa-file-alt text-blue-500" aria-label="Certificate"></i>
-                </span>
-                <div class="group block p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-500">Office 2016 e Administração</h3>
-                    <time class="text-sm text-gray-500 dark:text-gray-400">Jumper Cursos - 2016</time>
-                    <p class="mt-2 text-gray-600 dark:text-gray-300">Concluí curso básico de administração e ferramentas do Office 2016.</p>
-                </div>
-            </li>
-        </ol>
-    </div>
-</section>
-
-<!-- Serviços -->
-<section class="py-10  text-center custom-margin-services" id="services">
+  <!-- Serviços -->
+<section class="py-10 text-center custom-margin-services" id="services">
     <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-10">
         Meu<span class="text-blue-500 dark:text-blue-300"> Serviços</span>
     </h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-        <div class="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
+        <div class="flex flex-col items-center p-6 bg-white shadow-md rounded-lg service-card">
             <i class="fa-brands fa-java text-4xl text-blue-600 mb-4"></i>
             <h3 class="text-xl font-semibold text-gray-800">Java & MySQL</h3>
         </div>
-        <div class="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
+        <div class="flex flex-col items-center p-6 bg-white shadow-md rounded-lg service-card">
             <i class="fa-solid fa-code text-4xl text-blue-600 mb-4"></i>
             <h3 class="text-xl font-semibold text-gray-800">HTML, CSS, JS, Bootstrap, PHP, MySQL</h3>
         </div>
-        <div class="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
+        <div class="flex flex-col items-center p-6 bg-white shadow-md rounded-lg service-card">
             <i class="fa-solid fa-microchip text-4xl text-blue-600 mb-4"></i>
             <h3 class="text-xl font-semibold text-gray-800">Arduino</h3>
         </div>
     </div>
 </section>
 
-<!-- Skills -->
-<section class="py-10  custom-margin-skills" id="skills">
-    <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-10">
-        Minhas<span class="text-blue-500 dark:text-blue-300"> Habilidades</span>
-    </h2>
-    <div id="skills-container" class="flex flex-wrap justify-center gap-5 max-w-10xl mx-auto">
-        <!-- Skills will be dynamically inserted here -->
-    </div>
-</section>
+    <!-- Skills -->
+    <section class="py-10  custom-margin-skills" id="skills">
+        <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-10">
+            Minhas<span class="text-blue-500 dark:text-blue-300"> Habilidades</span>
+        </h2>
+        <div id="skills-container" class="flex flex-wrap justify-center gap-5 max-w-10xl mx-auto skill-card">
+            <!-- Skills will be dynamically inserted here -->
+        </div>
+    </section>
 
-<!-- Portifolio -->
-<section class="portifolio py-10 " id="portifolio">
-    <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-10">
+    <!-- Portifolio -->
+    <section class="portifolio py-10 " id="portifolio">
+        <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-10">
             Meus<span class="text-blue-500 dark:text-blue-300"> Projetos</span>
         </h2>
-    <div id="portifolio-container" class="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
-        <!-- Projetos serão exibidos aqui -->
-    </div>
-</section>
-
-<!-- Seção de Contato -->
-<section class="contact py-10" id="contact">
-    <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-10">
-        Meu<span class="text-blue-500 dark:text-blue-300"> Contato</span>
-    </h2>
-    <form id="contactForm" onsubmit="enviarEmail(); return false;" class="max-w-4xl mx-auto p-8 shadow-md rounded-lg">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <input type="text" id="nome" placeholder="Nome Completo" 
-                   class="p-4 border border-gray-300 rounded-lg w-full bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600">
-            <input type="email" id="email" placeholder="Digite seu endereço de email" 
-                   class="p-4 border border-gray-300 rounded-lg w-full bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600">
+        <div id="portifolio-container" class="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto portfolio-card">
+            <!-- Projetos serão exibidos aqui -->
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <input type="number" id="numero" placeholder="Digite seu número" 
-                   class="p-4 border border-gray-300 rounded-lg w-full bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600">
-            <input type="text" id="assunto" placeholder="Assunto do email" 
-                   class="p-4 border border-gray-300 rounded-lg w-full bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600">
-        </div>
-        <textarea id="mensagem" cols="30" rows="10" placeholder="Qual a mensagem" 
-                  class="p-4 border border-gray-300 rounded-lg w-full mb-6 bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600"></textarea>
-        <div id="error-message" class="text-red-500 mb-4"></div>
-        <input type="submit" value="Enviar mensagem" class="bg-blue-500 text-white py-2 px-6 rounded-lg cursor-pointer hover:bg-blue-600 transition duration-300">
-    </form>
-</section>
+    </section>
 
-<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="" class="hover:underline">Mateus Zdebski™</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <a href="#about" class="hover:underline me-4 md:me-6">Sobre</a>
-        </li>
-        <li>
-            <a href="#portifolio" class="hover:underline me-4 md:me-6">Portifolio</a>
-        </li>
-        <li>
-            <a href="#skills" class="hover:underline me-4 md:me-6">skills</a>
-        </li>
-        <li>
-            <a href="#services" class="hover:underline">Serviços</a>
-        </li>
-    </ul>
-    </div>
-</footer>
-<script>
-    document.getElementById('scrollToContact').addEventListener('click', function() {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-    });
-</script>
-<!-- Scripts -->
- <script src="/animacao.js"></script>
- <script src="/modo-escuro.js"></script>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script src="/contato.js"></script>
-<script src="/projetos.js"></script>
-<script src="/skills.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <!-- Seção de Contato -->
+    <section class="contact py-10" id="contact">
+        <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-10">
+            Meu<span class="text-blue-500 dark:text-blue-300"> Contato</span>
+        </h2>
+        <form id="contactForm" onsubmit="enviarEmail(); return false;"
+            class="max-w-4xl mx-auto p-8 shadow-md rounded-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <input type="text" id="nome" placeholder="Nome Completo"
+                    class="p-4 border border-gray-300 rounded-lg w-full bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600 contact-card">
+                <input type="email" id="email" placeholder="Digite seu endereço de email"
+                    class="p-4 border border-gray-300 rounded-lg w-full bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600 contact-card">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <input type="number" id="numero" placeholder="Digite seu número"
+                    class="p-4 border border-gray-300 rounded-lg w-full bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600 contact-card">
+                <input type="text" id="assunto" placeholder="Assunto do email"
+                    class="p-4 border border-gray-300 rounded-lg w-full bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600 contact-card">
+            </div>
+            <textarea id="mensagem" cols="30" rows="10" placeholder="Qual a mensagem"
+                class="p-4 border border-gray-300 rounded-lg w-full mb-6 bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600 contact-card"></textarea>
+            <div id="error-message" class="text-red-500 mb-4"></div>
+            <input type="submit" value="Enviar mensagem"
+                class="bg-blue-500 text-white py-2 px-6 rounded-lg cursor-pointer hover:bg-blue-600 transition duration-300">
+        </form>
+    </section>
+    
+    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href=""
+                    class="hover:underline">Mateus Zdebski™</a>. All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#about" class="hover:underline me-4 md:me-6">Sobre</a>
+                </li>
+                <li>
+                    <a href="#portifolio" class="hover:underline me-4 md:me-6">Portifolio</a>
+                </li>
+                <li>
+                    <a href="#skills" class="hover:underline me-4 md:me-6">skills</a>
+                </li>
+                <li>
+                    <a href="#services" class="hover:underline">Serviços</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/animacao.js"></script>
+    <script src="/modo-escuro.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="/contato.js"></script>
+    <script src="/projetos.js"></script>
+    <script src="/skills.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </body>
+
 </html>
