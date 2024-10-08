@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Tema escuro */
 .dark-mode {
     --bg-color: #1e293b;
@@ -143,3 +144,150 @@ section {
     100% { transform: scale(1); }
 }
 
+=======
+/* Tema escuro */
+.dark-mode {
+    --bg-color: #1e293b;
+    --text-color: #f9fafb;
+    --link-color: #93c5fd;
+    --button-bg-color: #3b82f6;
+    --button-text-color: #1e293b;
+    --card-bg-color: #1f2937;
+    --border-color: #334155;
+}
+/* Estilos padrão */
+body {
+    background-color: #ffffff; /* Cor de fundo padrão */
+    color: #000000; /* Cor do texto padrão */
+}
+
+/* Estilos para o tema escuro */
+.dark body {
+    background-color: #191f36; /* Cor de fundo para o tema escuro */
+    color: #ffffff; /* Cor do texto para o tema escuro */
+}
+
+
+.navbar.dark-mode {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+}
+
+.navbar.dark-mode a {
+    color: var(--text-color);
+}
+
+.navbar.dark-mode .active {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+}
+
+.section .dark-mode {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+}
+
+
+.skills-container .dark-mode {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+}
+
+h2 .dark-mode {
+    background-color: var(--bg-color);
+    border-color: var(--text-color);
+}
+.section {
+    background-color: var(--bg-color);
+}
+
+.section .card {
+    background-color: var(--card-bg-color);
+    border-color: var(--border-color);
+}
+
+
+.custom-margin-top {
+    margin-top: 13%; /* Ajuste o valor conforme necessário */
+}
+
+.custom-margin-about {
+    margin-top: 13%;
+}
+
+.custom-margin-services{
+    margin-top: 13%;
+}
+
+
+a:hover, a:focus {
+    border-bottom: 2px solid #59B2F4;
+    color: #59B2F4;
+}
+
+.btn-contato:hover {
+    background-color: #004a8e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.icon-button:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+input:focus, textarea:focus {
+    border-color: #59B2F4;
+    box-shadow: 0 0 0 1px #59B2F4;
+}
+
+section {
+    margin-top: 4rem; /* Ajuste conforme necessário */
+    margin-bottom: 4rem; /* Ajuste conforme necessário */
+}
+
+.section-separator {
+    border-top: 2px solid #ddd;
+    margin: 2rem 0;
+}
+
+.reveal-animation {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.animate-click {
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+}
+
+/* Inicialização */
+.reveal, .fade {
+    opacity: 0;
+    transform: translateY(20px); /* ou qualquer transformação inicial desejada */
+}
+
+
+/* Efeito de Clique */
+@keyframes click-effect {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+>>>>>>> 3e38f67 (tirado log)
