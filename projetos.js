@@ -35,19 +35,6 @@ const projectData = {
     // Adicione mais projetos conforme necessário
 };
 
-async function fetchGithubRepos() {
-    try {
-        const response = await fetch('https://api.github.com/users/Mateus-Zdebski/repos');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const repos = await response.json();
-        return repos.filter(repo => !repo.private); // Filtrar repositórios privados
-    } catch (error) {
-        console.error('Erro ao buscar repositórios do GitHub:', error);
-    }
-}
-
 function getLanguageIcons(languages) {
     const icons = {
         Bootstrap: 'fab fa-bootstrap',
@@ -72,7 +59,7 @@ function getLanguageIcons(languages) {
 async function displayProjects() {
     try {
         const repos = await fetchGithubRepos();
-        console.log('Repositórios:', repos); // Verifique os dados retornados
+        // console.log('Repositórios:', repos); // Verifique os dados retornados
 
         const portifolioContainer = document.getElementById('portifolio-container');
         if (!portifolioContainer) {
@@ -82,7 +69,7 @@ async function displayProjects() {
         portifolioContainer.innerHTML = '';
 
         repos.forEach(repo => {
-            console.log('Criando projeto para:', repo.name); // Verifique se está criando os elementos corretamente
+            // console.log('Criando projeto para:', repo.name); // Verifique se está criando os elementos corretamente
 
             const project = projectData[repo.name];
             if (!project) return; // Pular projetos não definidos no projectData
