@@ -78,3 +78,6 @@ ScrollReveal().reveal('.contact-card', {
     interval: 150
 });    
 
+    document.getElementById("scrollToContact").addEventListener("click", function () {
+        document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    });
