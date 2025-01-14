@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const skillIcons = {
     JavaScript: 'fab fa-js',
     Python: 'fab fa-python',
@@ -182,4 +182,4 @@ async function displaySkills() {
 
 document.addEventListener('DOMContentLoaded', displaySkills);
 
->>>>>>> 3e38f67 (tirado log)
+3e38f67 (tirado log)
