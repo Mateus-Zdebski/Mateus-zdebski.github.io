@@ -10,6 +10,9 @@ const skillIcons = {
     Bootstrap: 'fab fa-bootstrap',
     MySQL: 'fas fa-database',
     Arduino: 'fab fa-arduino',
+    React: 'fab fa-react', // Ícone para React
+    TypeScript: 'fas fa-code', // Personalize se quiser um ícone mais específico
+    Vite: 'fas fa-bolt', // Ícone genérico ou substitua por um personalizado
     // Adicione outros ícones conforme necessário
 };
 
